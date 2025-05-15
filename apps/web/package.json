@@ -5,16 +5,25 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack --port 3000",
-    "build": "next build",
+    "build": "cd ../../packages/db && npx prisma generate && cd ../../apps/web && next build",
     "start": "next start",
     "lint": "next lint --max-warnings 0",
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.2.0",
     "@repo/ui": "*",
+    "@tailwindcss/postcss": "^4.1.5",
+    "axios": "^1.8.4",
+    "class-variance-authority": "^0.7.1",
+    "nanoid": "^5.1.5",
     "next": "^15.2.4",
+    "postcss": "^8.5.3",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-icons": "^5.5.0",
+    "tailwindcss": "^4.1.5",
+    "zustand": "^5.0.3"
   },
   "devDependencies": {
     "@repo/eslint-config": "*",

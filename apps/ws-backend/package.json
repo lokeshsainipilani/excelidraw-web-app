@@ -1,0 +1,23 @@
+{
+  "name": "ws-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc -b && node dist/index.js",
+    "build":"cd ../../packages/db && npx prisma generate && cd ../../apps/ws-backend && tsc -b"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "dependencies": {
+    "@repo/backend-common": "*",
+    "@repo/db": "*",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/ws": "^8.18.1",
+    "jsonwebtoken": "^9.0.2",
+    "redis": "^5.0.1",
+    "ws": "^8.18.1"
+  }
+}
