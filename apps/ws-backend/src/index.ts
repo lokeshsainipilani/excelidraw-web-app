@@ -6,9 +6,14 @@ import { createClient } from "redis";
 
 const prisma = new PrismaClient();
 
-
-const wss = new WebSocketServer({port:8080});
-const publisher = createClient();
+const PORT = process.env.PORT || 8080
+//@ts-ignore
+const wss = new WebSocketServer({port:PORT});
+const publisher = createClient({
+    url:process.env.REDIS_URL,
+    password:process.env.REDIS_PASSWORD,
+    
+});
 
 export const TOPIC = "chat_messages";
 
