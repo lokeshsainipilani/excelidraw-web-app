@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm install zod && tsc -b"
   },
   "keywords": [],
   "author": "",
@@ -11,9 +12,9 @@
   "type": "module",
   "description": "",
   "dependencies": {
-    "zod": "^3.24.2"
+    "zod": "^3.24.4"
   },
-  "exports":{
-    "./types":"./src/types.ts"
+  "exports": {
+    "./types": "./src/types.ts"
   }
 }
