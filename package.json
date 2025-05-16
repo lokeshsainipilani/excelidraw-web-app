@@ -2,7 +2,7 @@
   "name": "exceli-draw-web-app",
   "private": true,
   "scripts": {
-    "build": "npx turbo run build --filter=apps/http-backend",
+    "build": "turbo run build ",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
