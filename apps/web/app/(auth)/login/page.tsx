@@ -1,4 +1,4 @@
-import { AuthPage } from "@/components/Authpage";
+import { AuthPage } from  "../../../components/Authpage";
 
 export default function SigninPage(){
 
