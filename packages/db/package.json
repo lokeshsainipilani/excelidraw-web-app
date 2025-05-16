@@ -14,8 +14,8 @@
   "type": "commonjs",
   "description": "",
   "exports": {
-     "./client": "./dist/index.js",
-     ".":"./dist/index.js"
+     "./client": "./src/index.ts"
+     
   },
   "dependencies": {
     "@prisma/client": "^6.2.1",
