@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build":" tsc -b",
-    "generate": "npx prisma migrate dev --name hello && npx prisma generate",
+    "generate": " npx prisma generate",
     "prebuild": "npm run generate"
   },
   "keywords": [],
