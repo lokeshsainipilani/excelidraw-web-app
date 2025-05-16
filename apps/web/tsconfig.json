@@ -20,7 +20,7 @@
     ],
     "paths": {
       "@/*": ["./*"],
-      "@repo/*": ["../../packages/*/src"]
+      "@repo/common/types": ["../../packages/common/src/*"]
     },
     
   },
