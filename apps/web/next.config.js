@@ -1,10 +1,12 @@
 /** @type {import('next').NextConfig} */
+import path from 'path';
+
 const nextConfig = {
      transpilePackages: ["@repo/common"], // Ensure the common package is transpiled
   webpack: (config) => {
     config.resolve.alias = {
       ...(config.resolve.alias || {}),
-      "@repo/common": require.resolve("@repo/common"),
+      "@repo/common": path.resolve(__dirname, "../../packages/common/src"),
     };
     return config;
   },
