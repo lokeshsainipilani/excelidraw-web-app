@@ -9,7 +9,7 @@ import { Navbar } from "./Navbar";
 import Icon from "@/public/icon";
 import Link from "next/link";
 import { Footer } from "./Footer";
-import { json } from "stream/consumers";
+
 
 
 export function AuthPage({page}:{page: "signup" | "login"}){

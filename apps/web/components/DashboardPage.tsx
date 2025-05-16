@@ -9,6 +9,7 @@ import { Footer } from "./Footer"
 import { Navbar } from "./Navbar"
 import { FaPlay } from "react-icons/fa";
 
+
 interface Room{
     id:number
     slug: string
