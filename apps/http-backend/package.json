@@ -13,9 +13,9 @@
   "type": "commonjs",
   "description": "",
   "dependencies": {
-    "@repo/backend-common": "*",
-    "@repo/common": "*",
-    "@repo/db": "*",
+    "@repo/backend-common": "workspace:*",
+    "@repo/common": "workspace:*",
+    "@repo/db": "workspace:*",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
     "@types/jsonwebtoken": "^9.0.9",
