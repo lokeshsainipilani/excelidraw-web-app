@@ -13,7 +13,7 @@
   "description": "",
   "exports": {
     "./client": "./src/index.ts",
-     "default": "./dist/button.js"
+     "default": "./dist/index.js"
   },
   "dependencies": {
     "@prisma/client": "^6.2.1",
