@@ -2,7 +2,7 @@ import express, { Request, Response } from "express";
 import cors from "cors"
 import jwt from "jsonwebtoken"
 import {PrismaClient} from "@repo/db/client"
-import {CreateRoomSchema, CreateUserSchema, SigninSchema} from "@repo/common/types"
+import {CreateRoomSchema, SigninSchema} from "@repo/common/types"
 import {JWT_SECRET} from "@repo/backend-common/config"
 import { middleware } from "./middleware";
 
