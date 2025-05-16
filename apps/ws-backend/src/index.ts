@@ -3,6 +3,8 @@ import jwt, {JwtPayload} from "jsonwebtoken";
 import { JWT_SECRET } from "@repo/backend-common/config";
 import {PrismaClient} from "@prisma/client"
 import { createClient } from "redis";
+import { config } from "dotenv";
+config();
 
 const prisma = new PrismaClient();
 
@@ -10,8 +12,9 @@ const PORT = process.env.PORT || 8080
 //@ts-ignore
 const wss = new WebSocketServer({port:PORT});
 const publisher = createClient({
-    url:process.env.REDIS_URL,
-    password:process.env.REDIS_PASSWORD,
+    url: process.env.REDIS_URL
+
+    
     
 });
 

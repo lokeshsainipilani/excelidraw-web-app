@@ -13,14 +13,14 @@
   "type": "commonjs",
   "description": "",
   "dependencies": {
+    "@repo/backend-common": "*",
+    "@repo/common": "*",
+    "@repo/db": "*",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
     "@types/jsonwebtoken": "^9.0.9",
     "cors": "^2.8.5",
     "express": "^5.1.0",
-    "jsonwebtoken": "^9.0.2",
-    "@repo/db":"*",
-    "@repo/common":"*",
-    "@repo/backend-common":"*"
+    "jsonwebtoken": "^9.0.2"
   }
 }
