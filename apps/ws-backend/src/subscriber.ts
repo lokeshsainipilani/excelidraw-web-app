@@ -1,9 +1,16 @@
 import { createClient } from "redis";
 
-const { prisma } = require("@repo/db/prisma");
+import { PrismaClient } from "@repo/db/client";
+import { config } from "dotenv";
+config();
+
+const prisma = new PrismaClient();
 
 export const TOPIC = "chat_messages"
-const subscriber = createClient();
+
+const subscriber = createClient({
+  url:process.env.REDIS_URL
+});
 (async function () {
   await subscriber.connect();
   console.log("Subscriber is active");

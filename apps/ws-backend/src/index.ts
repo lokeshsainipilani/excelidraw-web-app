@@ -12,10 +12,7 @@ const PORT = process.env.PORT || 8080
 //@ts-ignore
 const wss = new WebSocketServer({port:PORT});
 const publisher = createClient({
-    url: process.env.REDIS_URL
-
-    
-    
+    url: process.env.REDIS_URL 
 });
 
 export const TOPIC = "chat_messages";
